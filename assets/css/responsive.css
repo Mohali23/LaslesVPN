@@ -1,4 +1,4 @@
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .container {
     max-width: 90%;
   }
@@ -144,7 +144,7 @@
     margin: 1.875rem 0;
   }
 }
-@media (min-width: 577px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .container {
     max-width: 90%;
   }
