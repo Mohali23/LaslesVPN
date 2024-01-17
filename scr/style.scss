@@ -2,15 +2,25 @@
 @use "_reset.scss";
 @use "_global.scss" as *;
 
-// Start Header Section
+/* Start Header Section */
 .header {
   padding: 2.5rem 0;
+  background-color: var(--color-white);
+  position: sticky;
+  top: 0;
+  z-index: 1;
   .header__wrapper {
     @include grid(3, 1fr, space-between, center);
     .navigation__links {
       @include flex(row, space-between, center);
       li {
         margin: 0 1.875rem;
+        a {
+          transition: var(--transition-timing);
+          &:hover {
+            color: var(--color-primary);
+          }
+        }
       }
     }
 
@@ -18,6 +28,10 @@
       @include flex(row, flex-end, center);
       .signIn-btn {
         padding-right: 1.875rem;
+        transition: var(--transition-timing);
+        &:hover {
+          color: var(--color-primary);
+        }
       }
     }
 
@@ -26,9 +40,9 @@
     }
   }
 }
-// End Header Section
+/*  End Header Section */
 
-// Start Bio Section
+/*  Start Bio Section */
 .bio {
   padding: 3.57rem 0;
   .bio__wrapper {
@@ -58,9 +72,9 @@
     }
   }
 }
-// End Bio Section
+/*  End Bio Section */
 
-// Start Statistics Section
+/*  Start Statistics Section */
 .statistics {
   @include grid(3, 1fr, space-between, center);
   box-shadow: 0px 48px 63px rgba(0, 0, 0, 0.04);
@@ -99,9 +113,9 @@
     }
   }
 }
-// End Statistics Section
+/*  End Statistics Section */
 
-// Start Features Section
+/*  Start Features Section */
 .features {
   .features__wrapper {
     display: grid;
@@ -143,9 +157,9 @@
     }
   }
 }
-// End Features Section
+/*  End Features Section */
 
-// Start Pricing Section
+/*  Start Pricing Section */
 .pricing {
   background-color: var(--color-background);
   .pricing__wrapper {
@@ -205,9 +219,9 @@
     }
   }
 }
-// End Pricing Section
+/*  End Pricing Section */
 
-// Start Global Network Section
+/*  Start Global Network Section */
 .global-network {
   .section-header {
     span {
@@ -222,9 +236,9 @@
     }
   }
 }
-// End Global Network Section
+/*  End Global Network Section */
 
-// Start Clients Section
+/*  Start Clients Section */
 .clients {
   .clients__wrapper {
     @include grid(5, 1fr, space-between, center);
@@ -233,9 +247,9 @@
     }
   }
 }
-// End Clients Section
+/*  End Clients Section */
 
-// Start Testimonials Section
+/*  Start Testimonials Section */
 .testimonials {
   .testimonials__wrapper {
     @include grid(3, 1fr, space-between, center);
@@ -325,9 +339,9 @@
     }
   }
 }
-// End Testimonials Section
+/*  End Testimonials Section */
 
-// Start Footer Section
+/*  Start Footer Section */
 .footer {
   background-color: var(--color-background);
   .footer__subscribe {
@@ -403,9 +417,15 @@
           &:not(:last-child) {
             margin-bottom: 1.25rem;
           }
+          a {
+            transition: var(--transition-timing);
+            &:hover {
+              color: var(--color-primary);
+            }
+          }
         }
       }
     }
   }
 }
-// End Footer Section
+/*  End Footer Section */

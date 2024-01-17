@@ -141,8 +141,13 @@ body {
   color: var(--color-heading);
 }
 
+/* Start Header Section */
 .header {
   padding: 2.5rem 0;
+  background-color: var(--color-white);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .header .header__wrapper {
   display: grid;
@@ -159,6 +164,12 @@ body {
 .header .header__wrapper .navigation__links li {
   margin: 0 1.875rem;
 }
+.header .header__wrapper .navigation__links li a {
+  transition: var(--transition-timing);
+}
+.header .header__wrapper .navigation__links li a:hover {
+  color: var(--color-primary);
+}
 .header .header__wrapper .registration {
   display: flex;
   flex-direction: row;
@@ -167,11 +178,17 @@ body {
 }
 .header .header__wrapper .registration .signIn-btn {
   padding-right: 1.875rem;
+  transition: var(--transition-timing);
+}
+.header .header__wrapper .registration .signIn-btn:hover {
+  color: var(--color-primary);
 }
 .header .header__wrapper .burger-menu__checkbox {
   display: none;
 }
 
+/*  End Header Section */
+/*  Start Bio Section */
 .bio {
   padding: 3.57rem 0;
 }
@@ -203,6 +220,8 @@ body {
   max-width: 100%;
 }
 
+/*  End Bio Section */
+/*  Start Statistics Section */
 .statistics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -248,6 +267,8 @@ body {
   font-size: var(--font-size-20);
 }
 
+/*  End Statistics Section */
+/*  Start Features Section */
 .features .features__wrapper {
   display: grid;
   grid-template-columns: 60% 36%;
@@ -284,6 +305,8 @@ body {
   margin-inline-start: -40px;
 }
 
+/*  End Features Section */
+/*  Start Pricing Section */
 .pricing {
   background-color: var(--color-background);
 }
@@ -348,6 +371,8 @@ body {
   box-shadow: var(--btn-shadow);
 }
 
+/*  End Pricing Section */
+/*  Start Global Network Section */
 .global-network .section-header span {
   font-weight: var(--font-weight-bold);
 }
@@ -362,6 +387,8 @@ body {
   width: 100%;
 }
 
+/*  End Global Network Section */
+/*  Start Clients Section */
 .clients .clients__wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -372,6 +399,8 @@ body {
   text-align: center;
 }
 
+/*  End Clients Section */
+/*  Start Testimonials Section */
 .testimonials .testimonials__wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -460,6 +489,8 @@ body {
   margin-inline-start: 0.9375rem;
 }
 
+/*  End Testimonials Section */
+/*  Start Footer Section */
 .footer {
   background-color: var(--color-background);
 }
@@ -540,4 +571,12 @@ body {
 }
 .footer .footer__wrapper .footer__links .footer__links-list li:not(:last-child) {
   margin-bottom: 1.25rem;
-}/*# sourceMappingURL=style.css.map */
+}
+.footer .footer__wrapper .footer__links .footer__links-list li a {
+  transition: var(--transition-timing);
+}
+.footer .footer__wrapper .footer__links .footer__links-list li a:hover {
+  color: var(--color-primary);
+}
+
+/*  End Footer Section *//*# sourceMappingURL=style.css.map */
