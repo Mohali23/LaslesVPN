@@ -36,6 +36,12 @@
   .header .header__wrapper .registration {
     display: none;
   }
+  .header .header__wrapper .burger-menu__checkbox:checked + .navigation-mobile {
+    top: 65px;
+  }
+  .header .header__wrapper .navigation-mobile {
+    display: block;
+  }
   .burger-menu {
     display: flex;
     flex-direction: column;
@@ -181,6 +187,9 @@
   .header .header__wrapper .navigation,
   .header .header__wrapper .registration {
     display: none;
+  }
+  .header .header__wrapper .navigation-mobile {
+    display: block;
   }
   .burger-menu {
     display: flex;

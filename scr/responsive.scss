@@ -42,6 +42,13 @@
       .registration {
         display: none;
       }
+      .burger-menu__checkbox:checked + .navigation-mobile {
+        top: 65px;
+      }
+
+      .navigation-mobile {
+        display: block;
+      }
     }
   }
 
@@ -233,6 +240,9 @@
       .navigation,
       .registration {
         display: none;
+      }
+      .navigation-mobile {
+        display: block;
       }
     }
   }

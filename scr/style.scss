@@ -4,13 +4,15 @@
 
 /* Start Header Section */
 .header {
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
   background-color: var(--color-white);
   position: sticky;
   top: 0;
   z-index: 1;
   .header__wrapper {
     @include grid(3, 1fr, space-between, center);
+    position: relative;
+    background-color: var(--color-white);
     .navigation__links {
       @include flex(row, space-between, center);
       li {
@@ -23,7 +25,6 @@
         }
       }
     }
-
     .registration {
       @include flex(row, flex-end, center);
       .signIn-btn {
@@ -37,6 +38,38 @@
 
     .burger-menu__checkbox {
       display: none;
+    }
+
+    .burger-menu__checkbox:checked + .navigation-mobile {
+      top: 40px;
+    }
+
+    .navigation-mobile {
+      position: absolute;
+      top: -12px;
+      display: none;
+      z-index: -2;
+      width: 100%;
+      transition: var(--transition-timing);
+      border-bottom: 1px solid var(--color-primary);
+      .navigation__links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        gap: 0.5rem;
+        font-size: 15px;
+        padding: 15px 0;
+        background-color: var(--color-white);
+        li {
+          margin: 0;
+          a {
+            transition: var(--transition-timing);
+            &:hover {
+              color: var(--color-primary);
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -259,6 +292,10 @@
       border-radius: var(--border-radius);
       padding: 1.875rem;
       height: 14.375rem;
+      transition: var(--transition-timing);
+      &:hover {
+        border: 2px solid var(--color-primary);
+      }
       .testimonials__customer-header {
         display: grid;
         align-items: center;
